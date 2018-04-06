@@ -1,0 +1,32 @@
+{
+  "name": "beat-root",
+  "version": "0.0.1",
+  "description": "GUI for Beta Vulgaris",
+  "repository": "git@github.com:leweucho/beat-root.git",
+  "author": "Lewe Ucho",
+  "license": "MIT",
+  "scripts": {
+    "start": "babel-node src",
+    "test": "standard --verbose --fix",
+    "precommit": "yarn test",
+    "prepush": "yarn test"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ],
+    "ignore": [
+      "coverage/"
+    ],
+    "parser": "babel-eslint"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-jest": "^22.4.3",
+    "babel-preset-env": "^1.6.1",
+    "hasky": "^3.0.2",
+    "jest": "^22.4.3",
+    "standard": "^11.0.1"
+  }
+}
